@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<title>Sending HTTP requests</title>
+	<link rel="stylesheet" type="text/css" href="css/WebAppExamples.css">
+</head>
+<body>
+	<h1>Java Web Programming Examples</h1>
+	<h2>HTML Form / Sending an HTTP request</h2>
+	
+	<p>
+		1. When you click on the link below, then the browser sends an <b>HTTP GET</b> request for the Web resource.
+		   The Web server sends an HTML document to the browser as the response.<br />
+		&nbsp;&nbsp;&nbsp;
+		
+		<a href="http://localhost:8080/First_WebApp_Examples/firstServlet">http://localhost:8080/First_WebApp_Examples/firstServlet</a><br /><br />
+	</p>
+	
+	
+	<p>
+		2. When you click on the link below, then the browser sends an <b>HTTP GET</b> request for the Web resource.
+		   This time, the request includes two parameters.<br />
+		&nbsp;&nbsp;&nbsp;
+		
+		<a href="http://localhost:8080/First_WebApp_Examples/secondServlet?firstname=Joe&title=Mr">
+		http://localhost:8080/First_WebApp_Examples/secondServlet?firstname=Joe&amp;title=Mr</a><br /><br />
+	</p>
+		
+	
+	<form action="http://localhost:8080/First_WebApp_Examples/thirdServlet" method="POST">
+		<p>3. When you click on the button below, then the browser sends an <b>HTTP POST</b> request for the Web resource.
+		      The Web server sends an HTML document to the browser as the response.</p>
+		<p>&nbsp;&nbsp;&nbsp;
+			<input type="submit" value="Send a POST request " />
+		</p>
+	</form>
+	
+</body>
+</html>

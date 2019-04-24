@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<title>HTML Form + Servlet</title>
+    <meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/WebAppExamples.css">
+</head>
+<body>
+	<h1>Java Web Programming Examples</h1>
+
+	<h2>HTML Form + Servlet</h2>
+
+    <!-- Note: 
+         The Web recourse 'simpleGreetingServlet' is available on the same Web server 
+         from where the browser loads this HTML document. Therefore, we do
+         not have to write here a complete URL with the server address etc. 
+     -->
+     
+	<form action="simpleGreetingServlet" method="POST">
+		<p><label>First name: </label><input type="text" name="txtFirstName" /></p>
+		<p><label>Last name: </label><input type="text" name="txtLastName" /></p>
+		<p><input type="submit" value="Greet me!" /></p>
+	</form>
+
+
+	<div id="divComments">
+		<hr />
+		When the button is pressed, the browser sends an <b>HTTP POST request</b>
+		with the form data to the Web server. The Web server sends an HTML document 
+		to the browser as the <b>response</b>. <br>
+		<br />		
+		Form parameters	are passed to the servlet as name/value pairs in an <b>HTTP POST</b> request.
+		The servlet container invokes the servlet's <b>doPost</b> method when the browser sends a HTTP POST
+		request to the servlet. You can use the HttpRequest object's <b>getParameter</b> method to obtain 
+		the parameter values. The method returns either the parameter value as a String, or null if the 
+		parameter is not part of the request.
+	</div>
+</body>
+</html>
