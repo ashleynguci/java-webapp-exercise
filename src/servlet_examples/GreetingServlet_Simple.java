@@ -32,9 +32,10 @@ public class GreetingServlet_Simple extends HttpServlet {
 		String title = request.getParameter("txtTitle");
 		String firstName = request.getParameter("txtFirstName");
 		String lastName = request.getParameter("txtLastName");
+		String mess = request.getParameter("txtMess");
 
 		// 2. Compose the greeting text
-		String greetingText = "Hello, " + title + " " + firstName + " " + lastName + "!";
+		String greetingText = "Hello, " + title + " " + firstName + " " + lastName + "!"+"\n"+mess;
 
 		// 3. Write the text to the HTML document
 		out.println("<!DOCTYPE html>");
