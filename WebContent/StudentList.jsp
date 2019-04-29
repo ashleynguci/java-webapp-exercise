@@ -21,16 +21,18 @@
 		<%-- If this JSP page is requested with a parameter called 'movieList' 
 		     and the list is not empty, then show the data in an HTML table.
 		 --%>
-		
+				
 			<table>
 				<thead>
 					<tr>
-						<th>Student ID</th><th>Last Name</th><th>First Name</th><th>Street</th><th>Post Office</th><th>Postcode</th>
+						<th>Student ID</th><th>Last Name</th><th>First Name</th><th>Street</th><th>Post Office</th><th>Post code</th>
 					</tr>
 				</thead>
 				<tbody>
+
 					<c:forEach items="${ studentList }" var="studentObject">
 						<tr>
+						
 							<td><c:out value="${ studentObject.id}" /></td>
 							<td><c:out value="${ studentObject.lastname }" /></td>
 							<td><c:out value="${ studentObject.firstname }" /></td>

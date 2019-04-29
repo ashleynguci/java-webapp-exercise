@@ -36,6 +36,7 @@ import student_database.StudentDAO;
 
 			// 4. Forward the request back to the JSP page
 			request.getRequestDispatcher("StudentList.jsp").forward(request, response);
+
 		}
 
 }
